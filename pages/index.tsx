@@ -6,6 +6,7 @@ import { Profile } from '@/components/Profile/Profile'
 import { About } from '@/components/About/About'
 import { Experience } from '@/components/Experience/Experience'
 import { Contact } from '@/components/Contact/Contact'
+import Navbar from '@/components/Navbar/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar/>
       <main className={styles.main}>
       <Profile/>
       <About/>
