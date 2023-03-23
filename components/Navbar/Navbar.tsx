@@ -15,8 +15,8 @@ const Navbar = () => {
               <Link href="/about">
                 <h2 className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</h2>
               </Link>
-              <Link href="/contact">
-                <h2 className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</h2>
+              <Link href="https://vicarb.github.io/remotework/">
+                <h2 className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Remote</h2>
               </Link>
             </div>
           </div>

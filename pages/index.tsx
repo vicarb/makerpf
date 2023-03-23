@@ -7,6 +7,7 @@ import { About } from '@/components/About/About'
 import { Experience } from '@/components/Experience/Experience'
 import { Contact } from '@/components/Contact/Contact'
 import { FName } from '@/components/FName/FName'
+import JobGrid from '@/components/JobGrid/JobGrid'
 import Navbar from '@/components/Navbar/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,6 +25,7 @@ export default function Home() {
       <FName/>
       <main className={styles.main}>
       <Profile/>
+      <JobGrid/>
       <About/>
       <Experience/>
       <Contact/>
