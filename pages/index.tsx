@@ -12,6 +12,7 @@ import Navbar from '@/components/Navbar/Navbar'
 import Particles from 'react-particles'
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
+import type { Container, Engine } from "tsparticles-engine";
 
 const inter = Inter({ subsets: ['latin'] })
 
