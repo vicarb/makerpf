@@ -154,10 +154,9 @@ export default function Home() {
       <Navbar/>
       <FName/>
       <main className={styles.main}>
-      <Profile/>
-      <JobGrid/>
-      <About/>
-      <Experience/>
+
+      <section id="experience-section" className='bg-red-500'>
+      <Experience/></section>
       <Contact/>
         
       </main>

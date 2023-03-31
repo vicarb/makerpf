@@ -1,7 +1,21 @@
 import React from 'react'
 import { motion } from "framer-motion"
 
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}
+
 export const FName = () => {
+
+  function handleLinkClick(event, sectionId) {
+    event.preventDefault();
+    scrollToSection(sectionId);
+  }
+
   return (
 <section className="py-24 flex items-center min-h-screen justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
   <motion.div className="mx-auto max-w-[43rem]" initial={{ opacity: 0, scale: 0.5 }}
@@ -18,8 +32,13 @@ export const FName = () => {
     </div>
 
     <div className="mt-6 flex items-center justify-center gap-4">
-      <a href="#" className="transform rounded-md bg-indigo-600/95 px-5 py-3 font-medium text-white transition-colors hover:bg-indigo-700">Experiencia</a>
-      <a href="#" className="transform rounded-md border border-slate-200 px-5 py-3 font-medium text-slate-900 transition-colors hover:bg-slate-50">Educación </a>
+    <a
+          href="#experience-section"
+          onClick={(event) => handleLinkClick(event, "experience-section")}
+          className="transform rounded-md bg-indigo-600/95 px-5 py-3 font-medium text-white transition-colors hover:bg-indigo-700"
+        >Experiencia
+        </a>
+      <a href="#experience-section" className="transform rounded-md border border-slate-200 px-5 py-3 font-medium text-slate-900 transition-colors hover:bg-slate-50">Educación </a>
     </div>
   </motion.div>
 </section>
