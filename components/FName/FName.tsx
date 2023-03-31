@@ -1,17 +1,16 @@
 import React from 'react'
 import { motion } from "framer-motion"
 
-function scrollToSection(sectionId) {
+function scrollToSection(sectionId: string) {
   const section = document.getElementById(sectionId);
-  section.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 export const FName = () => {
 
-  function handleLinkClick(event, sectionId) {
+  function handleLinkClick(event: React.MouseEvent<HTMLAnchorElement>, sectionId: string) {
     event.preventDefault();
     scrollToSection(sectionId);
   }

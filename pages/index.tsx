@@ -13,6 +13,7 @@ import Particles from 'react-particles'
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
+import { Education } from '@/components/Education/Education'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -155,8 +156,12 @@ export default function Home() {
       <FName/>
       <main className={styles.main}>
 
-      <section id="experience-section" className='bg-red-500'>
-      <Experience/></section>
+      <section id="experience-section" className=''>
+      <Experience/>
+      </section>
+      <section id="education-section" className='p-8'>
+      <Education/>
+      </section>
       <Contact/>
         
       </main>
