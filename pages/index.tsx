@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { Profile } from '@/components/Profile/Profile'
 import { About } from '@/components/About/About'
 import { Experience } from '@/components/Experience/Experience'
+import { Education } from '@/components/Education/Education'
 import { Contact } from '@/components/Contact/Contact'
 import { FName } from '@/components/FName/FName'
 import JobGrid from '@/components/JobGrid/JobGrid'
@@ -13,7 +14,6 @@ import Particles from 'react-particles'
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
-import { Education } from '@/components/Education/Education'
 
 const inter = Inter({ subsets: ['latin'] })
 
